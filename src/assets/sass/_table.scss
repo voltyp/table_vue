@@ -1,0 +1,43 @@
+.table {
+  margin: 1rem 0;
+
+  &__head {
+    display: none;
+
+    & .table__cell {
+      padding: 0.5rem;
+    }
+
+    @media (min-width: 769px) {
+      display: flex;
+    }
+  }
+
+  &__row {
+    border: 1px solid #e2e3e3;
+    text-align: left;
+
+    @media (min-width: 769px) {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      border: none;
+    }
+  }
+
+  &__cell {
+    padding: 1rem 1.25rem;
+
+    & > div {
+      font-weight: bold;
+    }
+
+    @media (min-width: 769px) {
+      border: 1px solid #e2e3e3;
+
+      & > div {
+        display: none;
+      }
+    }
+  }
+}
